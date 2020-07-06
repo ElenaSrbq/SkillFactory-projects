@@ -8,15 +8,14 @@ def game_core_v3(number):
     count = 1
     upper = 101  # верхняя граница промежутка
     lower = 1  # нижняя граница промежутка
-    predict = 50
+    predict = (upper + lower) // 2
     while number != predict:
         count += 1
         if number > predict:
             lower = predict
-            predict = (upper + lower) // 2
         elif number < predict:
             upper = predict
-            predict = (upper + lower) // 2
+        predict = (upper + lower) // 2
     return count
 
 
