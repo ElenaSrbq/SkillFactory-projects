@@ -219,23 +219,35 @@ LIMIT 1
 
 ДАТАСЕТ ДЛЯ ПРОЕКТА
 
-SELECT f.actual_departure departure,
-       f.actual_arrival arrival,
-       f.arrival_airport destination,
-       f.flight_id id,
+with a as 
+(
+select 
+	t.flight_id,
+	sum(t.amount) amount
+from 
+	dst_project.ticket_flights t
+group by t.flight_id
+) 
+SELECT f.flight_id id,
        f.flight_no flight,
+       f.departure_airport from_airport,
+       f.arrival_airport to_airport,
+       f.actual_departure departure,
+       f.actual_arrival arrival,
+       date_part('hour', f.actual_arrival - f.actual_departure) + date_part('minute', f.actual_arrival - f.actual_departure) / 60 duration,
        ac.model aircraft,
-       ap.city city,
+       count(DISTINCT s.seat_no) capacity,
+       'Anapa' from_city,
+       ap.city to_city,
        ap.latitude lt,
        ap.longitude lg,
        ap.timezone,
-       sum(t.amount) revenue,
-       count(DISTINCT s.seat_no) capacity
+       a.amount revenue
 FROM dst_project.flights f
 LEFT JOIN dst_project.aircrafts ac ON f.aircraft_code = ac.aircraft_code
 LEFT JOIN dst_project.seats s ON ac.aircraft_code = s.aircraft_code
 LEFT JOIN dst_project.airports ap ON f.arrival_airport = ap.airport_code
-LEFT JOIN dst_project.ticket_flights t ON f.flight_id = t.flight_id
+LEFT JOIN a ON f.flight_id = a.flight_id
 WHERE f.departure_airport = 'AAQ'
   AND (date_trunc('month', f.scheduled_departure) in ('2017-01-01',
                                                       '2017-02-01',
@@ -243,8 +255,8 @@ WHERE f.departure_airport = 'AAQ'
   AND f.status not in ('Cancelled')
 GROUP BY id,
          model,
-         city,
+         to_city,
          lt,
          lg,
-         timezone
-
+         timezone,
+         a.amount
