@@ -37,9 +37,9 @@ WHERE aircraft_code = '773'
 
 SELECT count(DISTINCT f.flight_id)
 FROM dst_project.flights f
-WHERE status = 'Arrived'
-  AND (actual_departure BETWEEN '2017-04-01' AND '2017-09-01'
-       OR actual_arrival BETWEEN '2017-04-01' AND '2017-09-01')
+WHERE f.status = 'Arrived'
+  AND (f.actual_departure BETWEEN '2017-04-01' AND '2017-09-01'
+       OR f.actual_arrival BETWEEN '2017-04-01' AND '2017-09-01')
 
 >> 74227
 
