@@ -2,7 +2,8 @@
 https://www.kaggle.com/c/sf-dst-car-price-prediction/overview
 ## Ноутбук с решением 
 https://www.kaggle.com/elenaaserebrennikova/sf-car-price
-## Команда
+
+### Команда
 `Елена`, `Нина`
 
 ### Задача
@@ -30,5 +31,5 @@ MAPE (Mean Percentage Absolute Error) - средняя абсолютная ош
 * Стекинг - Нина
 
 ### Файлы 
-`parsing.ipynb` - парсинг объявлений о продаже авто с авто.ру 
+`parsing.ipynb` - парсинг объявлений о продаже авто с авто.ру \\
 `audi.csv` и подобные - файлы с результатами парсинга; объединенный файл не загружен в репозиторий из-за слишком большого объема
