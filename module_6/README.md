@@ -1,4 +1,5 @@
 ### [Страница Соревнования](https://www.kaggle.com/c/sf-dst-car-price-prediction/overview)
+#### [Baseline](https://www.kaggle.com/itslek/baseline-sf-dst-car-price-prediction-v16)
 
 ### Решение 
 #### [Ноутбук с решением](https://www.kaggle.com/elenaaserebrennikova/sf-car-price)
