@@ -1,5 +1,5 @@
-## Соревнование
-https://www.kaggle.com/c/sf-dst-car-price-prediction/overview
+## [Страница Соревнования](https://www.kaggle.com/c/sf-dst-car-price-prediction/overview)
+
 ## Ноутбук с решением 
 https://www.kaggle.com/elenaaserebrennikova/sf-car-price
 ### Второй ноутбук с полученными нами данными
