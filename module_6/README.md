@@ -1,9 +1,8 @@
-## [Страница Соревнования](https://www.kaggle.com/c/sf-dst-car-price-prediction/overview)
+### [Страница Соревнования](https://www.kaggle.com/c/sf-dst-car-price-prediction/overview)
 
-## Ноутбук с решением 
-https://www.kaggle.com/elenaaserebrennikova/sf-car-price
-### Второй ноутбук с полученными нами данными
-https://www.kaggle.com/kalinina/baseline-sf-dst-car-price-prediction-kalinina?scriptVersionId=62860868
+### Решение 
+#### [Ноутбук с решением](https://www.kaggle.com/elenaaserebrennikova/sf-car-price)
+#### [Второй ноутбук с полученными нами данными](https://www.kaggle.com/kalinina/baseline-sf-dst-car-price-prediction-kalinina?scriptVersionId=62860868)
 
 ### Команда
 `Елена`, `Нина`
