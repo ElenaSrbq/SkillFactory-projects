@@ -1,7 +1,8 @@
-## Соревнование
-https://www.kaggle.com/c/sf-dst-car-price-prediction/overview
-## Ноутбук с решением 
-https://www.kaggle.com/elenaaserebrennikova/sf-car-price
+### [Страница Соревнования](https://www.kaggle.com/c/sf-dst-car-price-prediction/overview)
+
+### Решение 
+#### [Ноутбук с решением](https://www.kaggle.com/elenaaserebrennikova/sf-car-price)
+#### [Второй ноутбук с полученными нами данными](https://www.kaggle.com/kalinina/baseline-sf-dst-car-price-prediction-kalinina?scriptVersionId=62860868)
 
 ### Команда
 `Елена`, `Нина`
@@ -26,11 +27,11 @@ MAPE (Mean Percentage Absolute Error) - средняя абсолютная ош
 
 ### Этапы работы
 * Парсинг с авто.ру - Нина
-* EDA, Feature Engineering - Елена
+* EDA, Feature Engineering - Елена, Нина
 * Сравнение одиночных моделей - Елена
-* Стекинг - Нина
+* Стекинг  
 
 ### Файлы 
-`parsing.ipynb` - парсинг объявлений о продаже авто с авто.ру
-
 `audi.csv` и подобные - файлы с результатами парсинга; объединенный файл не загружен в репозиторий из-за слишком большого объема
+
+`parsing.ipynb` - объединение спарсенных scv с объявлениями о продаже авто с авто.ру
