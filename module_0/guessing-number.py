@@ -32,3 +32,4 @@ def score_game(game_core):
 
 
 score_game(game_core_v3)
+
