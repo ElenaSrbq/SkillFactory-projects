@@ -1,7 +1,11 @@
 ## Проект 5 Компьютер говорит "Нет"
+
+### Задача 
 Прогнозирование вероятности дефолта заемщика
+Соревнование [\[SF-DST\] Credit Scoring](https://www.kaggle.com/c/sf-dst-scoring)
 
-[Соревнование](https://www.kaggle.com/c/sf-dst-scoring)
+### Решение
 
-Ник  Elena A. Serebrennikova
+
+### Результат
 Лучший результат - ROC AUC = 0.739
