@@ -2,6 +2,7 @@
 
 ### Задача 
 Прогнозирование вероятности дефолта заемщика
+
 Соревнование [\[SF-DST\] Credit Scoring](https://www.kaggle.com/c/sf-dst-scoring)
 
 ### Решение
