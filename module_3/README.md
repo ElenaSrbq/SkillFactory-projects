@@ -1,5 +1,5 @@
 ## Проект 3. О вкусной и здоровой пище
-Страница соревнования на Kaggle - [Restaurant Rating prediction](https://www.kaggle.com/c/sf-dst-restaurant-rating "Kaggle соревнование")
+Соревнование на Kaggle - [Restaurant Rating prediction](https://www.kaggle.com/c/sf-dst-restaurant-rating "Соревнование")
 
 ### Задача
 Построить модель, которая предсказывает рейтинг ресторана. Если предсказания модели сильно отличаются от фактического результата, то, возможно, ресторан накручивает себе рейтинг, и его стоит проверить.
